@@ -1,6 +1,5 @@
 import { Box } from '@rocket.chat/fuselage';
 import { GenericModal } from '@rocket.chat/ui-client';
-import DOMPurify from 'dompurify';
 import type { ReactElement } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
@@ -37,19 +36,18 @@ const FingerprintChangeModalConfirmation = ({
 					<Trans i18nKey='Confirm_configuration_update_description' />
 				)}
 			</Box>
-			<Box
-				is='p'
-				mbe={16}
-				dangerouslySetInnerHTML={{
-					__html: DOMPurify.sanitize(
-						t('Unique_ID_change_detected_learn_more_link', { fingerPrintChangedFaq: links.go.fingerPrintChangedFaq }),
-						{
-							ALLOWED_TAGS: ['b', 'i', 'em', 'strong', 'a'],
-							ALLOWED_ATTR: ['href', 'title'],
-						},
-					),
-				}}
-			/>
+			<Box is='p' mbe={16}>
+				<Trans
+					i18nKey='Unique_ID_change_detected_learn_more_link'
+					components={{
+						a: (
+							<a href={links.go.fingerPrintChangedFaq} target='_blank' rel='noopener noreferrer'>
+								{/* content injected by <Trans>*/}
+							</a>
+						),
+					}}
+				/>
+			</Box>
 		</GenericModal>
 	);
 };
