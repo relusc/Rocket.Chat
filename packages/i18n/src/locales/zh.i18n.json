@@ -5434,7 +5434,7 @@
   "Uninstall_grandfathered_app": "卸载 {{appName}}？",
   "Unique_ID_change_detected": "检测到唯一 ID 变更",
   "Unique_ID_change_detected_description": "用于标识此工作区的信息已发生变化。这可能发生在站点 URL 或数据库连接字符串更改时，或从现有数据库副本创建新工作区时。<br/><br/>你希望对现有工作区进行配置更新，还是创建新的工作区和唯一 ID？",
-  "Unique_ID_change_detected_learn_more_link": "<a href={{fingerPrintChangedFaq}} target=\"_blank\">了解更多</a>",
+  "Unique_ID_change_detected_learn_more_link": "<a>了解更多</a>",
   "Unit": "单位",
   "Unit_removed": "已移除的单位",
   "Units": "单位",

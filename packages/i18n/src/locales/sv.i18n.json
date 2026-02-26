@@ -5214,7 +5214,7 @@
   "Uninstall_grandfathered_app": "Avinstallera {{appName}}?",
   "Unique_ID_change_detected": "Förändring av unikt ID upptäckt",
   "Unique_ID_change_detected_description": "Information som identifierar den här arbetsytan har ändrats. Detta kan hända när webbplatsens URL eller databasens anslutningssträng ändras eller när en ny arbetsyta skapas från en kopia av en befintlig databas.<br/><br/>Vill du fortsätta med en konfigurationsuppdatering av den befintliga arbetsytan eller skapa en ny arbetsyta och ett unikt ID?",
-  "Unique_ID_change_detected_learn_more_link": "<a href={{fingerPrintChangedFaq}} target=\"_blank\">Läs mer om detta</a>",
+  "Unique_ID_change_detected_learn_more_link": "<a>Läs mer om detta</a>",
   "Unit": "Enhet",
   "Unit_removed": "Enhet borttagen",
   "Units": "Enheter",

@@ -5306,7 +5306,7 @@
   "Uninstall_grandfathered_app": "Vil du avinstallere {{appName}}?",
   "Unique_ID_change_detected": "Oppdaget endring av unik ID",
   "Unique_ID_change_detected_description": "Informasjon som identifiserer at dette arbeidsområdet er endret. Dette kan skje når nettadressen eller databasetilkoblingsstrengen endres eller når et nytt arbeidsområde opprettes fra en kopi av en eksisterende database.<br/><br/>Vil du fortsette med en konfigurasjonsoppdatering til det eksisterende arbeidsområdet eller opprette et nytt arbeidsområde og en unik ID?",
-  "Unique_ID_change_detected_learn_more_link": "<a href={{fingerPrintChangedFaq}} target=\"_blank\">Les mer</a>",
+  "Unique_ID_change_detected_learn_more_link": "<a>Les mer</a>",
   "Unit": "Enhet",
   "Unit_removed": "Enhet  fjernet",
   "Units": "Enheter",
