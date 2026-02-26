@@ -21,7 +21,7 @@ import type { TranslationKey } from '@rocket.chat/ui-contexts';
 import DOMPurify from 'dompurify';
 import { useId, useMemo } from 'react';
 import { useFormContext, Controller } from 'react-hook-form';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import { outgoingEvents } from '../../../../../app/integrations/lib/outgoingEvents';
 import { useHighlightedCode } from '../../../../hooks/useHighlightedCode';
@@ -188,10 +188,9 @@ const OutgoingWebhookForm = () => {
 										),
 									}}
 								/>
-								<FieldHint
-									id={`${channelField}-hint-3`}
-									dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(t('Integrations_for_all_channels')) }}
-								/>
+								<FieldHint id={`${channelField}-hint-3`}>
+									<Trans i18nKey='Integrations_for_all_channels' />
+								</FieldHint>
 							</Field>
 						)}
 						{showTriggerWords && (
